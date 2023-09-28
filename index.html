@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦾</text></svg>">
   </head>
 
   <body>
@@ -22,13 +22,20 @@
                 <p class="name" style="text-align: center;">
                   Hwiyeon Yoo
                 </p>
-                <p>I am a Ph.D. candidate in the Department of Electrical and Computer Engineering at Seoul National University (SNU), South Korea. My research interests include Embodied Navigation AI, Computer Vision, Visual Navigation, Vision-based Semantic Perception, and Robotics. Prior to my Ph.D. studies received B.S. degree in Electrical and Computer Engineering from Seoul National University in 2017. 
+                <p>I am a final year PhD Student at <a href="https://rllab.snu.ac.kr">Robot Learning Laboratory</a> in Seoul National University (SNU), Korea, and I am advised by Prof.<a href="https://rllab.snu.ac.kr/people/songhwai-oh"> Songhwai Oh </a>.
+                Previously, I obtained my bachelor's degree in Electrical and Computer Engineering from SNU in 2017. 
                 </p>
+                <p>
+                My research interests are focused on vision-based robot learning and semantic recognition, including Computer Vision, Robotics, and Embodied Visual Navigation AI.
+                </p>
+                
                 <p style="text-align:center">
                   <a href="mailto:hwiyeon.yoo@rllab.snu.ac.kr">Email</a> &nbsp;/&nbsp;
                   <a href="data/CV_hwiyeon_yoo_2309.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="https://rllab.snu.ac.kr/people/hwiyeon-yoo/hwiyeon-yoo">Homepage</a> &nbsp;/&nbsp;
                   <a href="https://scholar.google.co.kr/citations?user=Tf2kXrcAAAAJ&hl=ko&oi=ao">Google Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/Hwiyeon">Github</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/hwiyeon-yoo-a24604159/">Linkedin</a> &nbsp;/&nbsp;
+                  
                 </p>
               </td>
               <td style="padding:2.5%;width:40%;max-width:40%">
@@ -41,123 +48,309 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I'm interested in computer vision, machine learning, optimization, and image processing. Much of my research is about inferring the physical world (shape, motion, color, light, etc) from images. Representative papers are <span class="highlight">highlighted</span>.
+                  
                 </p>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
-    
-      
-      <tr>
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='TSGM_image'><video  width=100% height=100% muted autoplay loop>
-            <img src='images/TSGM_image.png' width="160">
+
+        
+      <tr  onmouseover="video_start('OVG-Nav')" >
+        <td style="padding:20px;width:35%;vertical-align:middle">
+            <div class="one" ><video id='OVG-Nav' width=100% height=100% muted autoplay loop>
+            <source src="images/OVG-Nav_image.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
           </div>
         </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://dreambooth3d.github.io/">
+        <td style="padding:20px;width:65%;vertical-align:middle">
+            <span class="papertitle">Commonsense-aware Object Value Graph Navigation for ObjectNav</span>
+          <!-- </a> -->
+          <br>
+            <b>Hwiyeon Yoo</b>, <a href="https://ececyh.github.io/">Yunho Choi</a>, <a href="https://rllab.snu.ac.kr/people/jeongho-park/jeongho-park">Jeonho Park</a>,
+              and <a href="https://rllab.snu.ac.kr/people/songhwai-oh">Songhwai Oh</a>. <br>
+          <em>Under Review</em> &nbsp
+          <br>
+        </td>
+        </tr>
+        
+
+        
+      <tr>
+        <td style="padding:20px;width:35%;vertical-align:middle">
+            <img src='images/LSViT_image.PNG' width="160">
+        </td>
+        <td style="padding:20px;width:65%;vertical-align:middle">
+          <a href="https://www.sciencedirect.com/science/article/pii/S0167865523000405">
+            <span class="papertitle">Local Selective Vision Transformer for Depth Estimation Using a Compound Eye Camera</span>
+          </a>
+          <br>
+            <a href="https://rllab.snu.ac.kr/people/wooseok-oh/wooseok-oh/">Wooseok Oh</a>, <b>Hwiyeon Yoo</b>,
+            <a href="https://rllab.snu.ac.kr/people/alumni-folder/timothy-ha">Timothy Ha</a>, and <a href="https://rllab.snu.ac.kr/people/songhwai-oh">Songhwai Oh</a>. <br>
+          <em>Pattern Recognition Letters</em>, 2023.&nbsp
+          <br>
+          <a href="data/23_LSViT_PRL.pdf">paper</a>
+          <p></p>
+        </td>
+        </tr>
+        
+
+        
+
+      <tr  onmouseover="video_start('tsgm')" >
+        <td style="padding:20px;width:35%;vertical-align:middle">
+            <div class="one" ><video id='tsgm' width=100% height=100% muted autoplay loop>
+            <source src="images/tsgm_overview.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+          </div>
+        </td>
+        <td style="padding:20px;width:65%;vertical-align:middle">
+          <a href="https://bareblackfoot.github.io/TopologicalSemanticGraphMemory/">
             <span class="papertitle">Topological Semantic Graph Memory for Image-Goal Navigation</span>
           </a>
           <br>
-          <Nuri Kim>, 
-          <Obin Kwon>, 
-          <strong>Hwiyeon Yoo</strong>, 
-          <Yunho Choi>,
-          <Jeongho Park>, 
-  	  <Songhwai Oh>
+            <a href="https://bareblackfoot.github.io/">Nuri Kim</a>, <a href="https://rllab.snu.ac.kr/people/yunho-choi/yunho-choi">Obin Kwon</a>, 	     <b>Hwiyeon Yoo</b>,
+            <a href="https://ececyh.github.io/">Yunho Choi</a>, <a href="https://rllab.snu.ac.kr/people/jeongho-park/jeongho-park">Jeongho Park</a>, and <a href="https://rllab.snu.ac.kr/people/songhwai-oh">Songhwai Oh</a>. <br>
+          <em>Conference on Robot Learning (CoRL)</em>, 2022. Oral presentation &nbsp
           <br>
-          <em>CoRL</em>, 2022 (<strong> Oral Presentation, Acceptance Rate: 6.5% </strong>)
-          <br>
-          <a href="https://dreambooth3d.github.io/">project page</a> / 
-          <a href="data/22_TSGM_CoRL.pdf">pdf</a>
+          <a href="https://bareblackfoot.github.io/TopologicalSemanticGraphMemory/">project page</a>
+          /
+          <a href="https://arxiv.org/abs/2303.00304">paper</a>
+          /
+          <a href="https://github.com/rllab-snu/TopologicalSemanticGraphMemory">code</a>
+          /
+          <a href="https://youtu.be/dAnsRLJxGOI">video</a>
           <p></p>
         </td>
-      </tr>    
-    
-    
-      <tr bgcolor="#ffffd0">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='TLO2M_image'>
-            <img src='images/TLO2M_image.png' width="160">
+        </tr>
+
+
+
+      <tr onmouseover="video_start('vgm')" >
+        <td style="padding:20px;width:35%;vertical-align:middle">
+            <div class="one" ><video id='vgm' width=100% height=100% muted autoplay loop>
+            <source src="images/vgm_overview.mov" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
           </div>
+      </td>
+        <td style="padding:20px;width:65%;vertical-align:middle">
+          <a href="https://rllab-snu.github.io/projects/vgm/doc.html">
+            <span class="papertitle">Visual Graph Memory with Unsupervised Representation for Visual Navigation</span>
+          </a>
+          <br>
+        <a href="https://obin-hero.github.io">Obin Kwon</a>,  <a href="https://bareblackfoot.github.io/">Nuri Kim</a>*,
+            <a href="https://https://ececyh.github.io/">Yunho Choi</a>*,
+            <b>Hwiyeon Yoo*</b>,
+            <a href="https://rllab.snu.ac.kr/people/jeongho-park/jeongho-park">Jeongho Park</a>*, <a href="https://rllab.snu.ac.kr/people/songhwai-oh">Songhwai Oh</a>. (* equal contribution)<br>
+          <em>ICCV</em>, 2021. &nbsp
+          <br>
+          <a href="https://rllab-snu.github.io/projects/vgm/doc.html">project page</a>
+          /
+          <a href="https://openaccess.thecvf.com/content/ICCV2021/html/Kwon_Visual_Graph_Memory_With_Unsupervised_Representation_for_Visual_Navigation_ICCV_2021_paper.html">paper</a>
+          /
+          <a href="https://github.com/rllab-snu/Visual-Graph-Memory">code</a>
+          /
+          <a href="https://www.youtube.com/watch?v=Uksb_kR80Hk">video</a>
+          <p></p>
         </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
+
+        </tr>
+
+      <tr>
+        <td style="padding:20px;width:35%;vertical-align:middle">
+            <img src='images/Actual_CompoundEye_image.png' width="160">
+        </td>
+        <td style="padding:20px;width:65%;vertical-align:middle">
+          <a href="data/21_Actual_CompoundEye_ICCAS.pdf">
+            <span class="papertitle">Actualization of Deep Ego-motion Classification on Miniaturized Octagonal Compound Eye Camera</span>
+          </a>
+          <br>
+            <b>Hwiyeon Yoo</b>,
+            <a> Jungho Yi</a>,
+            <a href="https://ece.snu.ac.kr/research-faculty/faculty/full-time?md=view&profid=p068"> Jong Mo Seo</a>,
+            and <a href="https://rllab.snu.ac.kr/people/songhwai-oh">Songhwai Oh</a>. <br>
+          <em>International Conference on Control, Automation and Systems (ICCAS)</em>, 2021. Best Poster Paper Award Winner&nbsp
+          <br>
+          <a href="data/21_Actual_CompoundEye_ICCAS.pdf">paper</a>
+          <p></p>
+        </td>
+        </tr>
+
+
+      <tr>
+        <td style="padding:20px;width:35%;vertical-align:middle">
+            <img src='images/3DRecon_CompoundEye_image.png' width="160">
+        </td>
+        <td style="padding:20px;width:65%;vertical-align:middle">
+          <a href="data/21_3DRecon_CompoundEye_ICCAS.pdf">
+            <span class="papertitle">Vision-Based 3D Reconstruction Using a Compound Eye Camera</span>
+          </a>
+          <br>
+            <a href="https://rllab.snu.ac.kr/people/wooseok-oh/wooseok-oh/">Wooseok Oh</a>, <b>Hwiyeon Yoo</b>,
+            <a href="https://rllab.snu.ac.kr/people/alumni-folder/timothy-ha">Timothy Ha</a>,
+            and <a href="https://rllab.snu.ac.kr/people/songhwai-oh">Songhwai Oh</a>. <br>
+          <em>International Conference on Control, Automation and Systems (ICCAS)</em>, 2021.&nbsp
+          <br>
+          <a href="data/21_3DRecon_CompoundEye_ICCAS.pdf">paper</a>
+          <p></p>
+        </td>
+        </tr>
+        
+      <tr>
+        <td style="padding:20px;width:35%;vertical-align:middle">
+            <img src='images/TLO2M_image.png' width="160">
+        </td>
+        <td style="padding:20px;width:65%;vertical-align:middle">
           <a href="data/21_TLO2M_UR.pdf">
             <span class="papertitle">Localizability-based Topological Local Object Occupancy Map for Homing Navigation</span>
           </a>
           <br>
-          <strong>Hwiyeon Yoo</strong>,
-          <Songhwai Oh>
+            <b>Hwiyeon Yoo</b>,
+            and <a href="https://rllab.snu.ac.kr/people/songhwai-oh">Songhwai Oh</a>. <br>
+          <em>International Conference on Ubiquitous Robots (UR)</em>, 2021. &nbsp
           <br>
-          <em>UR</em>, 2021 &nbsp </font>
-          <br>
-          <a href="data/21_TLO2M_UR.pdf">pdf</a>
+          <a href="data/21_TLO2M_UR.pdf">paper</a>
           <p></p>
         </td>
-      </tr>
-      
+        </tr>
 
 
-
-          </tbody></table>
-
-          
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-            <tr>
-              <td>
-                <h2>Miscellanea</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-            
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
-              <td width="75%" valign="center">
-                <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a>
+      <tr>
+        <td style="padding:20px;width:35%;vertical-align:middle">
+            <img src='images/Sparse_Memory_image.png' width="160">
+        </td>
+        <td style="padding:20px;width:65%;vertical-align:middle">
+          <a href="data/20_Sparse_Memory_ICCAS.pdf">
+            <span class="papertitle">Path-Following Navigation Network Using Sparse Visual Memory</span>
+          </a>
           <br>
-                <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
-                <br>
-                <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Longuet-Higgins Award Committee Member, CVPR 2021</a>
-                <br>
-                <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
-                <br>
-                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/cs188.jpg" alt="cs188">
-              </td>
-              <td width="75%" valign="center">
-                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
-                <br>
-                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
-                <br>
-                <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
-              </td>
-            </tr>
-            
+            <b>Hwiyeon Yoo</b>,
+            <a href="https://bareblackfoot.github.io/">Nuri Kim</a>,
+            <a href="https://rllab.snu.ac.kr/people/jeongho-park/jeongho-park">Jeongho Park</a>,
+            and <a href="https://rllab.snu.ac.kr/people/songhwai-oh">Songhwai Oh</a>. <br>
+          <em>International Conference on Control, Automation and Systems (ICCAS)</em>, 2020. &nbsp
+          <br>
+          <a href="data/20_Sparse_Memory_ICCAS.pdf">paper</a>
+          <p></p>
+        </td>
+        </tr>
+        
+        
+      <tr>
+        <td style="padding:20px;width:35%;vertical-align:middle">
+            <img src='images/EgoMotion_CompoundEye_image.png' width="160">
+        </td>
+        <td style="padding:20px;width:65%;vertical-align:middle">
+          <a href="https://www.mdpi.com/1424-8220/19/23/5275">
+            <span class="papertitle">Deep Ego-Motion Classifiers for Compound Eye Cameras</span>
+          </a>
+          <br>
+            <b>Hwiyeon Yoo</b>,
+	    <a href="https://rllab.snu.ac.kr/people/alumni-folder/geonho-cha/geonho-cha">Geonho Cha</a>, 
+            and <a href="https://rllab.snu.ac.kr/people/songhwai-oh">Songhwai Oh</a>. <br>
+          <em>Sensors, vol. 19, no. 23, Dec.2019</em>. &nbsp
+          <br>
+          <a href="data/19_EgoMotion_CompoundEye_Sensors.pdf">paper</a>
+          <p></p>
+        </td>
+        </tr>
+        
+      <tr>
+        <td style="padding:20px;width:35%;vertical-align:middle">
+            <img src='images/HosliticGAN_image.jpg' width="160">
+        </td>
+        <td style="padding:20px;width:65%;vertical-align:middle">
+          <a href="data/18_HolisticGAN_ECCV.pdf">
+            <span class="papertitle">Unsupervised Holistic Image Generation from Key Local Patches</span>
+          </a>
+          <br>
+            <a href="https://rllab.snu.ac.kr/people/alumni-folder/donghoon-lee/donghoon-lee">Donghoon Lee</a>, 
+            <a href="https://sangdooyun.github.io/">Sangdoo Yun</a>,
+            <a href="https://sites.google.com/view/sungjoon-choi/personal">Sungjoon Choi</a>,
+            <b>Hwiyeon Yoo</b>,
+            <a href="https://faculty.ucmerced.edu/mhyang/">Ming-Hsuan Yang</a>,
+            and <a href="https://rllab.snu.ac.kr/people/songhwai-oh">Songhwai Oh</a>. <br>
+          <em>European Conference on Computer Vision (ECCV)</em>, 2018.&nbsp
+          <br>
+          <a href="data/18_HolisticGAN_ECCV.pdf">paper</a>
+          /
+          <a href="https://github.com/hellbell/KeyPatchGan">code</a>
+          <p></p>
+        </td>
+        </tr>
 
-            <tr>
-              <td align="center" style="padding:20px;width:25%;vertical-align:middle">
-                <h2>Basically <br> Blog Posts</h2>
-              </td>
-              <td width="75%" valign="middle">
-                <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
-                <br>
-                <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
-                <br>
-                <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
-                <br>
-                <a href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf">Scholars & Big Models: How Can Academics Adapt?</a>
-              </td>
-            </tr>
-            
+
+      <tr  onmouseover="video_start('text2action')">
+        <td style="padding:20px;width:35%;vertical-align:middle">
+            <div class="one" ><video id='text2action' width=100% height=100% muted autoplay loop>
+            <source src="images/text2action.mov" type="video/mp4" >
+            Your browser does not support the video tag.
+            </video>
+          </div>
+        </td>
+        <td style="padding:20px;width:65%;vertical-align:middle">
+          <a href="https://ieeexplore.ieee.org/document/8460608">
+            <span class="papertitle">Text2Action: Generative Adversarial Synthesis from Language to Action</span>
+          </a>
+          <br>
+            <a href="https://hyeminahn.oopy.io/">Hyemin Ahn</a>, 
+            <a href="https://rllab.snu.ac.kr/people/alumni-folder/timothy-ha">Timothy Ha</a>*, <a href="https://https://ececyh.github.io/">Yunho Choi</a>, 
+            <b>Hwiyeon Yoo</b>*, 
+              and <a href="https://rllab.snu.ac.kr/people/songhwai-oh">Songhwai Oh</a>. (* equal contribution)<br>
+          <em>ICRA</em>, 2018. &nbsp
+          <br>
+        <a href="18_Text2Action_ICRA.pdf">paper</a>
+        /
+        <a href="https://github.com/hiddenmaze/Text2Action">code</a>
+        /
+        <a href="https://youtu.be/LSN63LI0Qa8">video</a>
+        <p></p>
+
+
+      <tr>
+        <td style="padding:20px;width:35%;vertical-align:middle">
+            <img src='images/Objectness_CompoundEye_image.png' width="160">
+        </td>
+        <td style="padding:20px;width:65%;vertical-align:middle">
+          <a href="data/17_Objectness_CompoundEye_MFI.pdf">
+            <span class="papertitle">Estimating Objectness Using a Compound Eye Camera</span>
+          </a>
+          <br>
+            <b>Hwiyeon Yoo</b>,
+            <a href="https://rllab.snu.ac.kr/people/alumni-folder/donghoon-lee/donghoon-lee">Donghoon Lee</a>, 
+	    <a href="https://rllab.snu.ac.kr/people/alumni-folder/geonho-cha/geonho-cha">Geonho Cha</a>, 
+            and <a href="https://rllab.snu.ac.kr/people/songhwai-oh">Songhwai Oh</a>. <br>
+          <em>International Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI)</em>, 2017. &nbsp
+          <br>
+          <a href="data/17_Objectness_CompoundEye_MFI.pdf">paper</a>
+          <p></p>
+        </td>
+        </tr>
+        
+      <tr>
+        <td style="padding:20px;width:35%;vertical-align:middle">
+            <img src='images/Segmentation_CompoundEye_image.png' width="160">
+        </td>
+        <td style="padding:20px;width:65%;vertical-align:middle">
+          <a href="data/17_Segmentation_CompoundEye_MFI.pdf">
+            <span class="papertitle">Light-Weight Semantic Segmentation for Compound Images</span>
+          </a>
+          <br>
+            <a href="https://rllab.snu.ac.kr/people/alumni-folder/geonho-cha/geonho-cha">Geonho Cha</a>, 
+            <b>Hwiyeon Yoo</b>,
+            <a href="https://rllab.snu.ac.kr/people/alumni-folder/donghoon-lee/donghoon-lee">Donghoon Lee</a>, 	    
+            and <a href="https://rllab.snu.ac.kr/people/songhwai-oh">Songhwai Oh</a>. <br>
+          <em>International Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI)</em>, 2017. &nbsp
+          <br>
+          <a href="data/17_Segmentation_CompoundEye_MFI.pdf">paper</a>
+          <p></p>
+        </td>
+        </tr>
+          
             
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -165,7 +358,7 @@
               <td style="padding:0px">
                 <br>
                 <p style="text-align:right;font-size:small;">
-                  Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>. <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code instead. Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
+                  This webpage template is from <a rel="JonBarron" href="https://github.com/jonbarron/jonbarron_website">Jon Barron's</a>.
                 </p>
               </td>
             </tr>
